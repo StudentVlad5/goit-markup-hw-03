@@ -196,9 +196,12 @@ margin: 0 0 10px;
 /* END TEAM STYLE */
 
 /* START FOOTER STYLE */
-
-p.footer-contact.paragraf{
-    margin: 0;
+.footer-logo {
+    background: red;
+    display: block;
+}
+.footer-container {
+    display: block;
 }
 .logo.place-footer {
     padding: 60px 0 20px;
