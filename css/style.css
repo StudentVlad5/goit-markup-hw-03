@@ -14,9 +14,6 @@ body {
     background-color: var(--page-color);
     font-family: Roboto, sans-serif, Arial, sans-serif;
 }
-ul li {
-    list-style: none;
-}
 a {
     text-decoration: none;
 }
@@ -35,14 +32,20 @@ footer {
 button {
     cursor: pointer;
 }
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* END COMMON STYLES */
 
 /* START HEADER STYLE*/
-.menu {
-    width: 1170px;
-    margin: auto;
-    outline: 1px solid tomato;
-}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
 .logo {
     color: var(--main-text-color);
     font-family: Raleway,sans-serif;
@@ -59,18 +62,14 @@ button {
 .menu-nav-contact {
     display: flex;
     align-items: center;
-    padding: 0;
+  
+}
+.menu-nav-contact {
+    margin-left: auto;
 }
 .menu-nav {
     margin-left: 93px;
 }
-/* delete */
-.menu-nav,
-.menu-nav-contact {
-    outline: 1px solid red;
-}
-/* delete */
-
 .menu-item {
     display: block;
     color:var(--main-text-color);
@@ -87,13 +86,19 @@ button {
 .menu-nav .menu-nav-item:not(:last-child) {
     margin-right: 50px;
 }
-.menu-nav-contact .menu-nav-item + .menu-nav-item{
+.menu-nav-contact .menu-nav-item:not(:last-child) {
     margin-right: 50px;
 }
 /* END HEADER STYLE*/
 
 /* START HERO STYLE*/
+.hero-title{
+    margin-bottom: 30px;
+    margin-top: 0;
+}
 .order {
+    display: block;
+    margin: 0 auto;
     color: var(--page-color);
     background-color: var(--activity-color);
     font-weight: 700;
@@ -109,6 +114,21 @@ button {
 /* END HERO STYLE*/
 
 /* START ADVANTAHES STYLE */
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 67px;
+    margin-bottom: 94px;
+    outline: 2px solid red;
+}
+.advantages-list .item {
+    width: 270px;
+    margin-right: 30px;
+    background: tomato;
+}
+.advantages-list .item:nth-child(4n) {
+    margin-right: 0;
+}
 .advantages-item {
 color: var(--main-text-color);
 font-weight: 700;
