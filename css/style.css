@@ -38,7 +38,11 @@ button {
 /* END COMMON STYLES */
 
 /* START HEADER STYLE*/
-
+.menu {
+    width: 1170px;
+    margin: auto;
+    outline: 1px solid tomato;
+}
 .logo {
     color: var(--main-text-color);
     font-family: Raleway,sans-serif;
@@ -50,17 +54,41 @@ button {
 .color-logo {
     color: var(--activity-color);
 }
+.main-nav,
+.menu-nav,
+.menu-nav-contact {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.menu-nav {
+    margin-left: 93px;
+}
+/* delete */
+.menu-nav,
+.menu-nav-contact {
+    outline: 1px solid red;
+}
+/* delete */
+
 .menu-item {
+    display: block;
     color:var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 33px 0 31px;
 }
 .menu-item.contact {
     color: #757575;
     font-style: normal;
-   
+}
+.menu-nav .menu-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+.menu-nav-contact .menu-nav-item + .menu-nav-item{
+    margin-right: 50px;
 }
 /* END HEADER STYLE*/
 
