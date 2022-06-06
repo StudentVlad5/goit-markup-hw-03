@@ -10,21 +10,21 @@
 
 /* START COMMON STYLES */
 body {
+    font-family: Roboto, sans-serif, Arial, sans-serif;
     color: var(--main-text-color);
     background-color: var(--page-color);
-    font-family: Roboto, sans-serif, Arial, sans-serif;
 }
 a {
     text-decoration: none;
 }
 h1 {
-    color: var(--page-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--page-color);
 }
 footer {
     background-color: var(--footer-background-color);
@@ -47,14 +47,16 @@ button {
     padding-right: 15px;
  }
 .logo {
-    color: var(--main-text-color);
+    padding: 0;
+    margin: 0;
+
     font-family: Raleway,sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding: 0;
-    margin: 0;
+
+    color: var(--main-text-color);
 }
 .color-logo {
     color: var(--activity-color);
@@ -74,16 +76,18 @@ button {
 }
 .menu-item {
     display: block;
-    color:var(--main-text-color);
+    padding: 33px 0 31px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: 33px 0 31px;
+
+    color:var(--main-text-color);
 }
 .menu-item.contact {
-    color: #757575;
     font-style: normal;
+    color: #757575;
 }
 .menu-nav .menu-nav-item:not(:last-child) {
     margin-right: 50px;
@@ -101,15 +105,18 @@ button {
 .order {
     display: block;
     margin: 0 auto;
-    color: var(--page-color);
-    background-color: var(--activity-color);
+    width: 200px;
+    height: 50px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
+
+    
+    color: var(--page-color);
+    background-color: var(--activity-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -130,27 +137,33 @@ button {
     margin-right: 0;
 }
 .advantages-item {
-color: var(--main-text-color);
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin: 0 0 10px;
+    margin: 0 0 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-text-color);
 }
 .advantages-description {
-    color: var(--secondary-text-color);
+    margin: 10px 0 0;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin: 10px 0 0;
+
+    color: var(--secondary-text-color);
 }
 /* END ADVANTAHES STYLE */
 
 /* START DOING STYLE */
 .section-title {
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -184,11 +197,12 @@ margin: 0 0 10px;
 }
 .team-position {
     margin-bottom: 30px;
-    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
 }
 .team-list .item:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -197,14 +211,17 @@ margin: 0 0 10px;
 
 /* START FOOTER STYLE */
 .footer-logo {
-    background: red;
     display: block;
+    padding-top: 60px;
 }
 .footer-container {
     display: block;
 }
-.logo.place-footer {
-    padding: 60px 0 20px;
+
+.logo.place-footer,
+p.footer-contact.paragraf {
+    margin: 0 0 20px;
+
 }
 .post-address {
     margin: 0;
@@ -222,11 +239,13 @@ margin: 0 0 10px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
-.contact.contact-item {
-    color: #FFFFFF60;
     font-weight: 400;
+    color: #FFFFFF60;
 }
+.list-footer {
+    padding-bottom: 60px;
+}
+
 /* END FOOTER STYLE */
 
 /* START FILTER OF PROJECTS */
@@ -244,14 +263,16 @@ margin: 0 0 10px;
 }
 .filter-button {
     padding: 6px 22px;
-    color: var(--main-text-color);
-    background-color: #F5F4FA;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    
     border: none;
     border-radius: 4px;
+    color: var(--main-text-color);
+    background-color: #F5F4FA;
 }
 .poster-inter:not(:nth-child(3n)){
     margin-right: 30px;
