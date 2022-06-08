@@ -7,7 +7,6 @@
     --secondary-footer-text-color: #FFFFFF60;
     --footer-background-color: #2F303A;
 }
-
 /* START COMMON STYLES */
 body {
     font-family: Roboto, sans-serif, Arial, sans-serif;
@@ -38,25 +37,33 @@ button {
     list-style: none;
 }
 /* END COMMON STYLES */
-
 /* START HEADER STYLE*/
-.container {
-    width: 1200px;
+.page-header,
+.footer-container,
+.section-item {
     margin: 0 auto;
-    padding: 94px 15px;
-    
+    padding: 0 15px;
+}
+.section-item:not(:last-child) {
+    width: 1200px;
+    padding-bottom: 94px;
+ }
+ .header-container,
+ .footer-container {
+    width: 1200px;
  }
 .logo {
     padding: 0;
     margin: 0;
-
     font-family: Raleway,sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-
     color: var(--main-text-color);
+}
+.logo p {
+    margin: 0;
 }
 .color-logo {
     color: var(--activity-color);
@@ -66,7 +73,6 @@ button {
 .menu-nav-contact {
     display: flex;
     align-items: center;
-  
 }
 .menu-nav-contact {
     margin-left: auto;
@@ -74,24 +80,20 @@ button {
 .menu-nav {
     margin-left: 93px;
 }
-.menu-item {
+.menu-nav-item .menu-item {
     display: block;
-    padding: 33px 0 31px;
-
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color:var(--main-text-color);
 }
 .menu-item.contact {
     font-style: normal;
     color: #757575;
 }
-.menu-nav .menu-nav-item:not(:last-child) {
-    margin-right: 50px;
-}
+.menu-nav .menu-nav-item:not(:last-child),
 .menu-nav-contact .menu-nav-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -99,41 +101,38 @@ button {
     border-bottom: 1px solid #ECECEC;
 }
 .main-nav.container {
-    padding:0;
+    padding: 0;
 }
 /* END HEADER STYLE*/
-
 /* START HERO STYLE*/
 .hero-title{
-    margin-bottom: 30px;
-    margin-top: 0;
+    padding: 200px 0 50px;
+    margin: 0 auto;
+}
+.hero-style {
+    padding-bottom: 200px;
+    background-color: var(--footer-background-color);
 }
 .order {
     display: block;
     margin: 0 auto;
     width: 200px;
     height: 50px;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-
-    
     color: var(--page-color);
     background-color: var(--activity-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 /* END HERO STYLE*/
-
 /* START ADVANTAHES STYLE */
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    /* margin-top: 67px;
-    margin-bottom: 94px; */
 }
 .advantages-list .item {
     width: 270px;
@@ -144,32 +143,25 @@ button {
 }
 .advantages-item {
     margin: 0 0 10px;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--main-text-color);
 }
 .advantages-description {
     margin: 10px 0 0;
-
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }
 /* END ADVANTAHES STYLE */
-
 /* START DOING STYLE */
 .section-title {
     margin: 0;
-    /* padding-top: 94px; */
-    padding-bottom: 50px;
-
+    padding: 94px 0 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -184,8 +176,12 @@ button {
     margin-right: 30px;
 }
 /* END DOING STYLE */
-
 /* TEAM STYLE */
+.team-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 94px;
+}
 .team {
     background: #F5F4FA;
 }
@@ -194,7 +190,8 @@ button {
     flex-wrap: wrap;
 }
 .team-member {
-    margin: 30px 0 10px;
+    margin: 0;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -202,12 +199,11 @@ button {
     letter-spacing: 0.03em;
 }
 .team-position {
-    padding-bottom: 30px;
+    margin: 0;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }
 .team-list .item:not(:nth-child(4n)) {
@@ -218,27 +214,28 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-/* END TEAM STYLE */
-
-/* START FOOTER STYLE */
-.footer-logo {
-    display: block;
-    padding-top: 60px;
+.team-card-style {
+    padding: 30px 0;
+    margin-top: -5px;
 }
+/* END TEAM STYLE */
+/* START FOOTER STYLE */
 .container.footer-container {
     display: block;
-    padding: 0;
+    padding: 60px 0;
 }
-
 .logo.place-footer,
 p.footer-contact.paragraf {
     margin: 0 0 20px;
-
 }
 .post-address {
     margin: 0;
     color: var(--page-color);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
 }
 .whitecolor-logo {
     color: var(--page-color);
@@ -257,21 +254,20 @@ p.footer-contact.paragraf {
 .list-footer {
     padding-bottom: 60px;
 }
-
 /* END FOOTER STYLE */
-
 /* START FILTER OF PROJECTS */
 .do-not-show {
     display: none;
 }
+.filter.section-item {
+    width: 1200px;
+    padding: 94px 15px;
+}
 .filter-container {
     display: flex;
     flex-wrap: wrap;
-    height: 54px;
     justify-content: center;
-    margin-bottom: 34px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .container.container-filter{
     margin-bottom: 0;
@@ -280,12 +276,10 @@ p.footer-contact.paragraf {
 }
 .filter-button {
     padding: 6px 22px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    
     border: none;
     border-radius: 4px;
     color: var(--main-text-color);
@@ -301,17 +295,18 @@ p.footer-contact.paragraf {
     margin-right: 8px;
     padding: 0;
 }
-
+.style-project-name {
+    margin-top: -5px;
+    padding: 20px 24px;
+}
 p.type-project {
     margin: 0;
-    padding: 0 0 20px 24px;
     color:var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
 p.name-project {
-    padding: 20px 0 0 24px;
     margin: 0;
     color: var(--main-text-color);
     font-weight: 700;
@@ -323,7 +318,6 @@ p.name-project {
     display: flex;
     flex-wrap: wrap;
 }
-
 .border-project {
     width: 370px;
     border: 1px solid #EEEEEE;
@@ -331,7 +325,6 @@ p.name-project {
     padding: 0;
 }
 /* END FILTER OF PROJECTS */
-
 /* START ACTIONS STYLES  */
 .menu-item:hover,
 .menu-item:focus {
