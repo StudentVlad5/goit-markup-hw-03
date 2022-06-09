@@ -42,15 +42,16 @@ button {
 .footer-container,
 .section-item {
     margin: 0 auto;
-    padding: 0 15px;
 }
-.section-item:not(:last-child) {
-    width: 1200px;
-    padding-bottom: 94px;
+.section-item {
+     padding: 0 15px 94px;
  }
- .header-container,
- .footer-container {
-    width: 1200px;
+ .menu.main-nav,
+ .footer-container,
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
  }
 .logo {
     padding: 0;
@@ -100,17 +101,14 @@ button {
 .page-header {
     border-bottom: 1px solid #ECECEC;
 }
-.main-nav.container {
-    padding: 0;
-}
 /* END HEADER STYLE*/
 /* START HERO STYLE*/
 .hero-title{
-    padding: 200px 0 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 .hero-style {
-    padding-bottom: 200px;
+    padding: 200px 0;
     background-color: var(--footer-background-color);
 }
 .order {
@@ -161,7 +159,7 @@ button {
 /* START DOING STYLE */
 .section-title {
     margin: 0;
-    padding: 94px 0 50px;
+    padding: 0 0 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -177,11 +175,6 @@ button {
 }
 /* END DOING STYLE */
 /* TEAM STYLE */
-.team-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 94px;
-}
 .team {
     background: #F5F4FA;
 }
@@ -218,10 +211,12 @@ button {
     padding: 30px 0;
     margin-top: -5px;
 }
+.section-title.team {
+    padding-top: 50px;
+}
 /* END TEAM STYLE */
 /* START FOOTER STYLE */
-.container.footer-container {
-    display: block;
+footer {
     padding: 60px 0;
 }
 .logo.place-footer,
@@ -235,7 +230,6 @@ p.footer-contact.paragraf {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
 }
 .whitecolor-logo {
     color: var(--page-color);
@@ -251,28 +245,19 @@ p.footer-contact.paragraf {
     font-weight: 400;
     color: #FFFFFF60;
 }
-.list-footer {
-    padding-bottom: 60px;
-}
 /* END FOOTER STYLE */
 /* START FILTER OF PROJECTS */
 .do-not-show {
     display: none;
 }
 .filter.section-item {
-    width: 1200px;
-    padding: 94px 15px;
+    padding: 94px 0px;
 }
 .filter-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
-}
-.container.container-filter{
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0;
 }
 .filter-button {
     padding: 6px 22px;
