@@ -39,12 +39,11 @@ button {
 /* END COMMON STYLES */
 /* START HEADER STYLE*/
 .page-header,
-.footer-container,
-.section-item {
+.footer-container {
     margin: 0 auto;
 }
 .section-item {
-     padding: 0 0 94px;
+     margin: 94px auto 0;
  }
  .menu.main-nav,
  .footer-container,
@@ -103,9 +102,11 @@ button {
 }
 /* END HEADER STYLE*/
 /* START HERO STYLE*/
+.hero.section-item {
+    margin-top: 0;
+}
 .hero-title{
-    padding-bottom: 50px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 .hero-style {
     padding: 200px 0;
@@ -158,8 +159,7 @@ button {
 /* END ADVANTAHES STYLE */
 /* START DOING STYLE */
 .section-title {
-    margin: 0;
-    padding: 0 0 50px;
+    margin: 0 0 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -177,6 +177,9 @@ button {
 /* TEAM STYLE */
 .team {
     background: #F5F4FA;
+}
+.team-container {
+    padding-top: 50px;
 }
 .team-list {
     display: flex;
@@ -211,16 +214,15 @@ button {
     padding: 30px 0;
     margin-top: -5px;
 }
-.section-title.team {
-    padding-top: 50px;
+.team.section-item {
+    padding-bottom: 94px;
 }
 /* END TEAM STYLE */
 /* START FOOTER STYLE */
 footer {
     padding: 60px 0;
 }
-.logo.place-footer,
-p.footer-contact.paragraf {
+.footer-logo {
     margin: 0 0 20px;
 }
 .post-address {
@@ -236,8 +238,6 @@ p.footer-contact.paragraf {
 }
 .contact.contact-item {
     display: block;
-    padding-top: 10px;
-    margin: 0;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -245,13 +245,16 @@ p.footer-contact.paragraf {
     font-weight: 400;
     color: #FFFFFF60;
 }
+.item-footer.link {
+    padding-top: 10px;
+}
 /* END FOOTER STYLE */
 /* START FILTER OF PROJECTS */
 .do-not-show {
     display: none;
 }
 .filter.section-item {
-    padding: 94px 0px;
+    margin-bottom: 94px;
 }
 .filter-container {
     display: flex;
@@ -292,7 +295,7 @@ p.type-project {
     letter-spacing: 0.03em;
 }
 p.name-project {
-    margin: 0;
+    margin: 0 0 4px;
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
