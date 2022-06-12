@@ -273,11 +273,9 @@ margin-bottom: 9px;
     color: var(--main-text-color);
     background-color: #F5F4FA;
 }
-.poster-inter:not(:nth-child(3n)){
-    margin-right: 30px;
-}
-.poster-inter:not(:nth-last-child(-n+3)){
-    margin-bottom: 30px;
+.poster-inter {
+    flex-basis: calc(100%/3 - 30px);
+    margin-top: 30px;
 }
 .list-filter:not(:last-child){
     margin-right: 8px;
@@ -305,6 +303,8 @@ p.name-project {
 .poster-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -30px;
 }
 .border-project {
     width: 370px;
