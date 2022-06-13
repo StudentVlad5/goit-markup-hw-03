@@ -38,7 +38,7 @@ button {
 }
 .section-item {
     margin: 0 auto;
-    padding: 94px;
+    padding: 94px 0;
 }
 /* END COMMON STYLES */
 /* START HEADER STYLE*/
@@ -182,8 +182,8 @@ button {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0;
     justify-content: center;
+    margin-top: 50px;
 }
 .doing-list .item:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -259,9 +259,6 @@ margin-bottom: 9px;
 /* START FILTER OF PROJECTS */
 .do-not-show {
     display: none;
-}
-.filter.section-item {
-    padding-top: 94px;
 }
 .filter-container {
     display: flex;
