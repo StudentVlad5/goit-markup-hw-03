@@ -1,4 +1,4 @@
-.icon {
+[class^="icon-"], [class*=" icon-"] {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -44,5 +44,7 @@ Single-colored icons can be modified like so:
 }
 
 .icon-yaco {
-  width: 0.8720703125em;
+  width: 200px;
+  height: 200px;
+  fill: red;
 }
