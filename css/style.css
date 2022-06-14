@@ -9,6 +9,8 @@
 }
 /* START COMMON STYLES */
 body {
+    max-width: 1600px;
+    margin: 0 auto;
     font-family: Roboto, sans-serif, Arial, sans-serif;
     color: var(--main-text-color);
     background-color: var(--page-color);
@@ -39,6 +41,14 @@ button {
 .section-item {
     margin: 0 auto;
     padding: 94px 0;
+}
+.doing-list,
+.team-list,
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 /* END COMMON STYLES */
 /* START HEADER STYLE*/
@@ -105,6 +115,10 @@ button {
 /* START HERO STYLE*/
 .hero.section-item {
     padding: 200px 0;
+    background-image: url(../images/main/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #000000;
     background-color: var(--footer-background-color);
 }
 .hero-title{
@@ -174,22 +188,16 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 }
+/* END ADVANTAGES STYLE */
 /* START DOING STYLE */
 .adventages.section-item {
     padding-bottom: 0;
-}
-.doing-list,
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
 }
 .doing-list .item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 /* END DOING STYLE */
-/* TEAM STYLE */
+/* START TEAM STYLE */
 .team {
     background: #F5F4FA;
 }
@@ -223,6 +231,28 @@ button {
     margin-top: -5px;
 }
 /* END TEAM STYLE */
+/* START OUR CLIENTS */
+.list.clients-list {
+    margin-left: -30px;
+}
+.clients-link {
+    position: relative;
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+.img-clients {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    }
+/* END OUR CLIENTS */
 /* START FOOTER STYLE */
 footer {
     padding: 60px 0;
