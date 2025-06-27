@@ -326,8 +326,8 @@ padding: 100px 0;
 flex-direction: column;
 }
 
-.footer-logo {
-display: block;
+.logo.footer-logo {
+display: inline-block;
 margin-bottom: 16px;
 }
 
