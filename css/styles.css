@@ -107,7 +107,7 @@ gap: 40px;
 padding: 24px 0;
 }
 .main-nav .logo {
-margin-right: 76px
+margin-right: 76px;
 }
 
 .logo {
@@ -118,7 +118,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--iris);
-padding-right: 76px;
+display: inline-block;
 }
 
 .logo-style {
@@ -130,7 +130,10 @@ color: #2e2f42;
 .menu-nav__link {
 color: var(--navy-blue);
 font-weight: 500;
+padding: 24px 0;
+display: block;
 }
+
 .menu-nav__link:hover,
 .menu-nav__link:focus {
 cursor: pointer;
