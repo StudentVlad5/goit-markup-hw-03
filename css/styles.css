@@ -98,6 +98,7 @@ padding: 0 15px;
 display: flex;
 flex-direction: row;
 align-items: center;
+padding: 24px 0
 }
 
 .main-nav .list,
@@ -239,7 +240,7 @@ margin: auto 0;
 .team__item {
 background: var(--white);
 border-radius: 0 0 4px 4px;
-width: 264px;
+width: calc((100% - 72px) / 4);
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 text-align: center;
 }
@@ -322,7 +323,7 @@ padding: 100px 0;
 flex-direction: column;
 }
 
-.footer .logo {
+.footer-logo {
 display: inline-block;
 margin-bottom: 16px;
 }
